@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto - consumo de API-REST</title>
+    <link rel="stylesheet" href="reto.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Gatitos app</h1>
+
+        <section id="randomMichis" class="michis">
+            <h2>Gatitos aleatorios</h2>
+
+            <span id="error"></span>
+
+            <article>
+                <button id="guardar1">Favoritos</button>
+                <img id="gatito-1" alt="imagen gatito">
+            </article>
+            <article>
+                <button id="guardar2">Favoritos</button>
+                <img id="gatito-2" alt="imagen gatito">
+            </article>
+            <button id="cambiar">Cambiar</button>
+        </section>
+
+        <section id="uploadingMichi">
+            <h2>Sube la foto de tu michi</h2>
+
+            <form id="uploadingForm">
+                <input type="file" id="file" name="file">
+                <button type="button" onclick="uploadMichiPhoto()">Subir foto de michi</button>
+            </form>
+        </section>
+
+        <h2>Gatitos favoritos</h2>
+        <section id="favouriteMichis" class="favoritos">
+        </section>
+
+    </div>
+    <script src="./reto.js"></script>
+</body>
+</html>
